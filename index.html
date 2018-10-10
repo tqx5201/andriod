@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>全网VIP视频在线解析</title></head>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<style>
+	body{ background-color:#2E2E2E}
+</style>
+
+<script language="javascript">
+//http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js
+function $$(id){
+	return document.getElementById(id);
+}
+
+function Tip(){
+	var diz=$$("url").value;
+	var jkurl=$$("jk");
+	var jk=$$("jk").selectedIndex;
+	var jkv=jkurl.options[jk].value;
+	var cljurl=$$("video_iframe");
+	cljurl.src=jkv+diz;
+}
+function Clo(){
+	$$("video_iframe").src="";
+}
+function auto_play(str){
+	$$("url").value=str;
+	Tip();
+}
+</script>
+
+
+<body>
+<div class="form-inline" style="overflow:hidden; margin: 0 auto; width:960px;padding:10px">
+<select class="form-control btn-info" style="width:120px;" id="jk">
+	<option value="http://jiexi.071811.cc/jx2.php?url=">万能接口3</option>
+	<option value="http://api.91exp.com/svip/?url=">万能接口5</option>
+	<option value="http://api.baiyug.cn/vip/index.php?url=">超清</option>
+	<option value="http://mlxztz.com/vip/index.php?url=">mlxztz</option>
+
+	
+	
+	
+	<option value="http://api.47ks.com/webcloud/?v=" >①47解析</option>
+	<option value="http://api.lxysw.cc/vip/index.php?url=">②号解析</option>
+	<option value="http://jx.71ki.com/index.php?url=">③号解析</option>
+	<option value="http://v.72du.com/api/?url=">④号解析</option>
+	<option value="http://www.yydy8.com/Common/?url=">⑤号解析</option>
+	<option value="http://www.97zxkan.com/jiexi/97zxkanapi.php/?url=">⑥号解析</option>
+	<option value="http://www.vipjiexi.com/yun.php?url=">接口1</option>
+	<option value="http://api.1008net.com/v.php?url=" >接口2</option>
+	<option value="http://api.nepian.com/ckparse/?url=" >接口3</option>
+	<option value="http://player.jidiaose.com/supapi/iframe.php?v=" >接口4</option>
+	<option value="http://api.pucms.com/index.php?url=" >接口5</option>
+	<option value="http://api.wlzhan.com/sudu/?url=" >接口6</option>
+	<option value="http://www.0335haibo.com/yun.php?url=" >接口7</option>
+	<option value="http://yun.mt2t.com/yun?url=" >接口8</option>
+	<option value="http://y.mt2t.com/lines?url=" >接口9</option>
+	<option value="http://www.0335haibo.com/yun.php?url=" >接口10</option>
+	<option value="http://www.sfsft.com/video.php?url=" >接口11</option>
+	<option value="http://www.82190555.com/video.php?url=" >接口12</option>
+	<option value="http://2.jx.72du.com/video.php?url=" >接口13</option>
+	<option value="http://www.97panda.com/kkflv/index.php?url=" >接口14</option>
+	<option value="http://jx.vgoodapi.com/jx.php?url=" >接口15</option>
+	<option value="http://www.dgua.xyz/webcloud/?url=" >接口16</option>
+	<option value="http://api.91exp.com/svip/?url=" >接口17</option>
+	<option value="http://vip.jlsprh.com/index.php?url=" >接口18</option>
+	<option value="http://api.xfsub.com/index.php?url=" >接口19</option>
+	<option value="http://jiexi.071811.cc/jx.php?url=" >接口20</option>
+	<option value="http://jiexi.92fz.cn/player/vip.php?url=" >接口21</option>
+	<option value="http://api.baiyug.cn/vip/index.php?url=" >接口22</option>
+	<option value="http://api.662820.com/xnflv/index.php?url=" >接口23</option>
+	<option value="http://www.82190555.com/index/qqvod.php?url=" >接口24</option>
+	<option value="http://yyygwz.com/index.php?url=" >接口25</option>
+	<option value="http://www.97panda.com/kkflv/index.php?url=" >接口26</option>
+	<option value="http://jx.api.163ren.com/vod.php?url=" >接口27</option>
+	<option value="http://lookxw.com/yingzi/?url=" >接口28</option>
+	<option value="http://www.0335haibo.com/tong.php?url=" >接口29</option>
+	<option value="http://www.wmxz.wang/video.php?url=" >接口30</option>
+	<option value="http://api.97kn.com/?url=" >接口31</option>
+	<option value="https://aikanapi.duapp.com/odflv105/index.php?url=" >接口32</option>
+	<option value="http://v.buy360.vip/wwcx/index.php?url=" >接口33</option>
+	<option value="http://api.lequgirl.com/?url=" >接口34</option>
+	<option value="https://jxapi.nepian.com/ckparse/?url=" >接口35</option>
+	<option value="http://91k.co/play.php?url=" >接口36</option>
+	<option value="http://www.52jiexi.com/yun.php?url=" >接口37</option>
+	<option value="http://mt2t.com/yun?url=">接口38</option>
+	<option value="http://000o.cc/jx/ty.php?url=">接口39</option>
+	<option value="http://yyygwz.com/index.php?url=">接口40</option>
+	<option value="http://vipjiexi.com/vip.php?url=">接口41</option>
+	<option value="http://www.wmxz.wang/video.php?url=">接口42</option>
+	<option value="http://jx.ck921.com/?url=">接口43</option>
+	<option value="http://s1y2.com/?url=">接口44</option>
+	<option value="http://www.ou522.cn/t2/1.php?url=">接口45</option>
+	<option value="http://jx.xuanpianwang.com/parse?url=">接口46</option>
+	<option value="https://apiv.ga/magnet/">接口47</option>
+	<option value="http://jiexi.92fz.cn/player/vip.php?url=">接口48</option>
+</select>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">链接：</div>
+      <input type="text" class="form-control"  style="width:570px;" id="url" placeholder="http://v.youku.com/v_show/id_XMzA4MjMyOTA1Ng==.html" value="http://v.youku.com/v_show/id_XMzA4MjMyOTA1Ng==.html">
+    </div>
+  </div>
+<button type="button" class="btn btn-success" onClick="Tip()">解析视频</button>
+<button type="button" class="btn btn-primary" onClick="Clo()">关闭视频</button>
+</div>
+
+
+<div style="overflow:hidden; margin: 0 auto; width:960px;">
+   <iframe id="video_iframe" src = "" style="height:540px;width:960px;frameborder:0;marginheight:0px;marginwidth:0px;background:#000000;border:2px solid #00a0e9">
+   </iframe>
+</div>
+
+
+
+
+<div style="overflow:hidden; margin: 0 auto; width:960px;padding:10px">
+	<ul class="list-inline text-center" id="slide"></ul>
+</div>
+
+<script language="javascript">
+
+function get_sjs_api(){
+	var html = '';
+	$.getJSON("http://api.shenjianshou.cn/?appid=87f9f152c264a9de&callback=?",  
+		function(result) { 
+			var title=result['data']['contents']['title'];
+			var vod_images=result['data']['contents']['vod_images'];
+			var vod_names=result['data']['contents']['vod_names'];
+			var vod_links=result['data']['contents']['vod_links'];
+			//alert(vod_links.length);
+			for(var i in vod_links) {  
+				//html='<a href="'+vod_links[i]+'">'+vod_names[i]+'</a>';
+				//html='<a href="javascript:;" onClick="auto_play(\''+vod_links[i]+'\')">'+vod_names[i]+'</a>';
+				//alert(html);
+				//html=html+'<img width=100 height=150 src="'+vod_images[i]+'">';
+				html='<li><a title="播放：'+vod_names[i]+'" href="javascript:;" onClick="auto_play(\''+vod_links[i]+'\')"><img width="90" height="135" src="'+vod_images[i]+'" class="img-thumbnail"/></a></li>';
+				$("#slide").append(html);
+				//alert(i+":"+vod_links[i]);//循环输出a:1,b:2,etc.  
+			}  
+		});  
+}
+
+function get_txt_local(){
+	$.get("/Marvel/list.txt",
+		function(data,status){
+			if(status){
+				//alert("Data: " + data + "nStatus: " + status);
+				var list_arr=data.split("\n");
+				//alert('共发现'+list_arr.length+'个影片');
+				for(var i=0;i<list_arr.length;i++){
+					var tmp_video=list_arr[i];
+					var tmp_video_arr=tmp_video.split(",");
+					var video_name=tmp_video_arr[0];
+					var video_link=tmp_video_arr[1];
+					var video_img=tmp_video_arr[2];
+					var html='<li><a title="播放：'+video_name+'" href="javascript:;" onClick="auto_play(\''+video_link+'\')"><img width="90" height="135" src="'+video_img+'" class="img-thumbnail"/></a></li>';
+					$("#slide").append(html);
+				}
+				
+			}
+			
+		}
+	);
+}
+
+get_txt_local();
+</script>
+
+</body>
+</html>
